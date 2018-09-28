@@ -1,0 +1,12 @@
+version: '2'
+services:
+  ros-master:
+    image: ros:kinetic-ros-core
+    command: ['roscore']
+    hostname: ros-master
+    networks:
+      - new
+
+networks:
+  new:
+
